@@ -1,1 +1,1 @@
-# Curso de Especializaci~nn y Big Data
+# Curso de Especialización y Big Data
