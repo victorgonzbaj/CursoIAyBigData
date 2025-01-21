@@ -3,10 +3,11 @@
 En relación con los contenidos del curso, se corresponde con:
 
 - Modulo 1:
-  - Almacenamiento de datos masivo
 
+  -  Almacenamiento de datos masivo
 - Modulo 2:
-  - Sistemas de almacenamiento distribuidos.
+
+  -  Sistemas de almacenamiento distribuidos.
 
 ## 1. Introducción a HDFS
 
@@ -24,16 +25,17 @@ HDFS (Hadoop Distributed File System) es un sistema de archivos distribuido dise
 ### Componentes principales
 
 1. **NameNode (Maestro)**:
+
    - Gestiona el espacio de nombres del sistema de archivos.
    - Mantiene un registro de los metadatos y la ubicación de los bloques de datos.
    - No almacena los datos de usuario, sino información sobre dónde están ubicados esos datos.
-
 2. **DataNodes (Esclavos)**:
+
    - Almacenan los bloques de datos.
    - Ejecutan operaciones de lectura y escritura de datos bajo la dirección del NameNode.
    - Informan periódicamente al NameNode sobre las réplicas de bloques que almacenan.
-
 3. **Secondary NameNode**:
+
    - Realiza puntos de control periódicos de los metadatos.
    - No es un respaldo del NameNode, pero ayuda en su recuperación en caso de fallo.
 
@@ -161,7 +163,7 @@ hdfs fsck /user/tu_usuario/archivo_local.txt -files -blocks -locations
 ### Herramientas de monitoreo integradas
 
 - **Interfaz web de Hadoop**: Accede a la interfaz web del NameNode para monitorear HDFS.
-  
+
   ```text
   http://<NameNode-host>:9870
   ```
