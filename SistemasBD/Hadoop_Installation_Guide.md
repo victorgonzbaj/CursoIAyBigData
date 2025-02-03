@@ -5,7 +5,7 @@
 1. **Tres Equipos Linux 24.04.1:**
    - Un Namenode
    - Dos Datanodes
-2. **Java instalado:** En mi caso he instalado java 11.
+2. **Java 8 instalado:**
 3. **Conexión de red entre los tres equipos.** He usado redinterna para interconexionar los equipos
    - datanode: 192.168.1.1
    - datanode1: 192.168.1.2
@@ -35,7 +35,7 @@ En cada equipo, instala Java:
 
 ```bash
 sudo apt update
-sudo apt install openjdk-11-jdk -y
+sudo apt install openjdk-8-jdk -y
 ```
 
 Verifica la versión:
@@ -243,7 +243,7 @@ Subelo a HDFS:
 hdsf dfs -put 100mb_file /
 ```
 
-Comprueba el archivo:
+Comprueba la replicacion del archivo:
 
 ```bash
 hdfs dfs -stat %r /100mb_file
